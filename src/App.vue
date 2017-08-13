@@ -15,17 +15,17 @@
 // 引入子组件
 import Cheader from './component/home/header.vue';
 import Cfooter from './component/home/footer.vue';
-    
-   export default {
-       components:{
-           'vue-header':Cheader,
-           'vue-footer':Cfooter
-       }
-   }
+
+export default {
+    components: {
+        'vue-header': Cheader,
+        'vue-footer': Cfooter
+    }
+}
 
 </script>
 
 
 <style>
-    
+
 </style>

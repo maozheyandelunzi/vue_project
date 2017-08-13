@@ -1,9 +1,10 @@
 
 <template>
   
-  <section>
-     <p>我是app头部------</p>
-  </section>
+  <header>
+     <mt-header fixed title='微商城'></mt-header>
+     <div></div>
+  </header>
   
 </template>
 
@@ -13,6 +14,10 @@
     }
 </script>
 
-<style>
-    
+<style lang='less'>
+    header{
+      div{
+        height:40px;
+      }
+    }
 </style>

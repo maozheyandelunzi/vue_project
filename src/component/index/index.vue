@@ -2,13 +2,23 @@
 
 <template>
     <section>
-        <p>我是app主页面 啊啊啊啊</p>
+        <vue-swipe></vue-swipe>
+        <vue-nav></vue-nav>
     </section>
 </template>
 
 <script>
-    export default {
 
+
+//引入组件
+import Cswipe from './swipe.vue';
+import Cnav from './nav.vue';
+
+    export default {
+       components:{
+           'vue-swipe':Cswipe,
+           'vue-nav':Cnav
+       }
     }
 </script>
 
