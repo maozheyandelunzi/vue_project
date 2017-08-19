@@ -20,6 +20,11 @@ import 'mui/examples/hello-mui/css/icons-extra.css';
 //引入filter.js
 import './js/filter.js';
 
+//引入vue-preview插件
+import Vuepreview from 'vue-picture-preview';
+
+
+
 
 //调用插件 因为如vue-resource的插件里在window环境下(浏览器)并且有全局的vue才会调用
 //         而我们进行模块化开发没有全局的vue所以要手动启用插件
@@ -37,7 +42,7 @@ import router from './js/router.js';
 Vue.use(vueResource);
 Vue.use(vueRouter);
 Vue.use(MintUi);
-
+Vue.use(Vuepreview);
 
 //组件导入
 import App from './App.vue';

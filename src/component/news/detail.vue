@@ -13,6 +13,7 @@
                 </div>
             </div>
         </div>
+        <vue-comment :id='id'></vue-comment>
     </section>
 </template>
 
@@ -23,17 +24,21 @@ import title from '../common/title.vue';
 //引入配置文件
 import config from '../../js/config.js';
 
+import comment from '../common/comment.vue';
+
 export default {
 
     data() {
         return {
             msg: '商品详情',
-            detail: {}
+            detail: {},
+            id:this.$route.params.id
         }
     },
 
     components: {
-        'vue-title': title
+        'vue-title': title,
+        'vue-comment':comment,
     },
     methods: {
         getDetail() {
